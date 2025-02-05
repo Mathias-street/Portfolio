@@ -193,7 +193,7 @@ header{
 }
 #social-links img{
     width: 40px;
-    height: auto;
+    height: 40px;
     display: block;
     transition: all 0.2s ease;
 }
