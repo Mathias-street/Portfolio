@@ -179,3 +179,27 @@ header{
     color: #222629;
     background: #86C232;
 }
+#social-links{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+#social-links li{
+    margin-left: 10px;
+}
+#social-links img{
+    width: 40px;
+    height: auto;
+    display: block;
+    transition: all 0.2s ease;
+}
+#social-links img:hover{
+    transform: scale(1.1);
+}
+#social-links img:active{
+    transform: scale(1.0);
+}
