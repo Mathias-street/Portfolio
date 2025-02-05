@@ -134,7 +134,7 @@ header{
 }
 .project{
     width: 100%;
-    height: fit-content;
+    height: auto;
     display: flex;
     align-items: center;
     background-color: grey;
@@ -157,7 +157,7 @@ header{
     padding: 10px;
     font-size: 14px;
 }
-#projectLinks{
+.projectLinks{
     transition: all 0.2s ease;
     display: inline-block;
     text-decoration: none;
@@ -167,14 +167,14 @@ header{
     border-radius: 40px;
     padding: 10px;
 }
-#projectLinks:link{}
-#projectLinks:visited{}
-#projectLinks:hover{
+.projectLinks:link{}
+.projectLinks:visited{}
+.projectLinks:hover{
     transform: scale(1.1);
     color: #222629;
     background: #86C232;
 }
-#projectLinks:active{
+.projectLinks:active{
     transform: scale(1.0);
     color: #222629;
     background: #86C232;
