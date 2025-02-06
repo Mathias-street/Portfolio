@@ -203,16 +203,26 @@ header{
 #social-links img:active{
     transform: scale(1.0);
 }
+.experiences{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
 .experienceTitle{
     display: block;
     align-items: center;
 }
 .experience{
     display: block;
-    width: 100%;
+    width: 60%;
+    height: auto;
     background-color: #3b3b3b;
     border-radius: 10px;
-    float: left;
-    height: 150px;
     margin-bottom: 20px;
+}
+.experienceBody{
+    text-align: center;
+    width: 90%;
+    margin: 10px;
 }
