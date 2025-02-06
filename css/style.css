@@ -35,15 +35,15 @@ h4{
 
 .Main{
     float: left;
-    width: 60%
+    width: 70%
 }
 .RightCol{
     float: right;
-    width: 20%
+    width: 15%
 }
 .LeftCol{
     float: left;
-    width: 20%;
+    width: 15%;
 }
 
 #navigation{
@@ -137,7 +137,7 @@ header{
     height: auto;
     display: flex;
     align-items: center;
-    background-color: grey;
+    background-color: #3b3b3b;
     border-radius: 10px;
 }
 .projectPhoto{
@@ -202,4 +202,17 @@ header{
 }
 #social-links img:active{
     transform: scale(1.0);
+}
+.experienceTitle{
+    display: block;
+    align-items: center;
+}
+.experience{
+    display: block;
+    width: 100%;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    float: left;
+    height: 150px;
+    margin-bottom: 20px;
 }
