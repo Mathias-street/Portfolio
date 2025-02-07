@@ -46,7 +46,7 @@ h4{
     width: 15%;
 }
 #bio{
-    min-height: 70vh;
+    min-height: 50vh;
 }
 #navigation{
     display: inline-block;
@@ -144,6 +144,14 @@ header{
     align-items: center;
     background-color: #3b3b3b;
     border-radius: 10px;
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translateX(+100%);
+}
+.projectShow{
+    opacity: 1;
+    transition-delay: 0.1s;
+    transform: translateX(0);
 }
 .projectPhoto{
     width: 40%;
@@ -226,6 +234,14 @@ header{
     background-color: #3b3b3b;
     border-radius: 10px;
     margin-bottom: 20px;
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.experienceShow{
+    opacity: 1;
+    transition-delay: 0.1s;
+    transform: translateX(0);
 }
 .experienceBody{
     text-align: center;

@@ -15,7 +15,7 @@ const observer = new IntersectionObserver(( entries ) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach(hiddenElement => observer.observe(hiddenElement));
 
-
+//for the header of the website
 const observer1 = new IntersectionObserver(( entries ) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -26,3 +26,22 @@ const observer1 = new IntersectionObserver(( entries ) => {
 
 const slideDownElements = document.querySelectorAll('.slideDownHidden');
 slideDownElements.forEach(slideDownElement => observer1.observe(slideDownElement));
+
+
+
+const observer2 = new IntersectionObserver(( entries ) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('projectShow')
+            entry.target.classList.add('experienceShow')
+        } else {
+            entry.target.classList.remove('projectShow')
+            entry.target.classList.remove('experienceShow')
+        }
+    })
+})
+
+
+const slideInRightElements = document.querySelectorAll('.project, .experience');
+slideInRightElements.forEach(slideInRightElement => observer2.observe(slideInRightElement));
+
