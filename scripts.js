@@ -4,7 +4,6 @@
  **/
 const observer = new IntersectionObserver(( entries ) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show')
         } else{
@@ -15,3 +14,15 @@ const observer = new IntersectionObserver(( entries ) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach(hiddenElement => observer.observe(hiddenElement));
+
+
+const observer1 = new IntersectionObserver(( entries ) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('slideDownShow')
+        }
+    });
+});
+
+const slideDownElements = document.querySelectorAll('.slideDownHidden');
+slideDownElements.forEach(slideDownElement => observer1.observe(slideDownElement));
