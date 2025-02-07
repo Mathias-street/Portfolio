@@ -34,9 +34,6 @@ const observer2 = new IntersectionObserver(( entries ) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('projectShow')
             entry.target.classList.add('experienceShow')
-        } else {
-            entry.target.classList.remove('projectShow')
-            entry.target.classList.remove('experienceShow')
         }
     })
 })
