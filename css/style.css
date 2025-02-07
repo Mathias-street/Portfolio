@@ -33,19 +33,21 @@ h4{
     color: white;
 }
 
-.Main{
+#Main{
     float: left;
     width: 70%
 }
-.RightCol{
+#RightCol{
     float: right;
     width: 15%
 }
-.LeftCol{
+#LeftCol{
     float: left;
     width: 15%;
 }
-
+#bio{
+    min-height: 70vh;
+}
 #navigation{
     display: inline-block;
     margin: 0;
@@ -105,13 +107,13 @@ header{
     display: flex;
     justify-content: center;
 }
-.ProfilePicturePos {
+#ProfilePicturePos {
     display: flex;
     align-items: center;
     text-align: left;
     margin: 20px;
 }
-.profileName{
+#profileName{
     display: flex;
     flex-direction: column;
 }
@@ -132,9 +134,12 @@ header{
     margin-bottom: 50px;
     border-radius: 10px;
 }
+#projects{
+    min-height: 100vh;
+}
 .project{
     width: 100%;
-    height: auto;
+    height: 350px;
     display: flex;
     align-items: center;
     background-color: #3b3b3b;
@@ -203,7 +208,7 @@ header{
 #social-links img:active{
     transform: scale(1.0);
 }
-.experiences{
+#experiences{
     display: flex;
     width: 100%;
     align-items: center;
@@ -225,4 +230,18 @@ header{
     text-align: center;
     width: 90%;
     margin: 10px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
 }
