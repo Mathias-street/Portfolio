@@ -295,3 +295,27 @@ header{
     transition-delay: 0.1s;
     transform: translateX(0);
 }
+#contact{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#contact a{
+    transition: all 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #222629;
+    border: solid #86C232;
+    border-radius: 40px;
+    padding: 10px;
+}
+#contact a:hover{
+    transform: scale(1.1);
+    color: #222629;
+    background: #86C232;
+}
+#contact a:active{
+    transform: scale(1.0);
+}
