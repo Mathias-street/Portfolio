@@ -269,8 +269,21 @@ header{
     transition-delay: 1s;
 }
 #skills{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
     margin-top: 200px;
 }
+.skill{
+    display: block;
+    width: 70%;
+    height: auto;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
 .skillNames{
-    text-align: left;
+    text-align: center;
 }
