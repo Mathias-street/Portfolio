@@ -268,3 +268,9 @@ header{
     transform: translateY(0);
     transition-delay: 1s;
 }
+#skills{
+    margin-top: 200px;
+}
+.skillNames{
+    text-align: left;
+}
