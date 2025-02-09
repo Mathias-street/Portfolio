@@ -34,14 +34,16 @@ const observer2 = new IntersectionObserver(( entries ) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('projectShow')
             entry.target.classList.add('experienceShow')
+            entry.target.classList.add('skillShow')
         } else{
             entry.target.classList.remove('projectShow')
             entry.target.classList.remove('experienceShow')
+            entry.target.classList.remove('skillShow')
         }
     })
 })
 
 
-const slideInRightElements = document.querySelectorAll('.project, .experience');
+const slideInRightElements = document.querySelectorAll('.project, .experience, .skill');
 slideInRightElements.forEach(slideInRightElement => observer2.observe(slideInRightElement));
 

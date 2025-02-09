@@ -283,11 +283,15 @@ header{
     border-radius: 10px;
     text-align: center;
     margin: 10px;
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translateX(+100%);
 }
 .skillNames{
     text-align: center;
 }
-#achievements{
-    margin-top: 200px;
-
+.skillShow{
+    opacity: 1;
+    transition-delay: 0.1s;
+    transform: translateX(0);
 }
